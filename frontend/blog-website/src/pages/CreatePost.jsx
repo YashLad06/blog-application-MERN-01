@@ -5,7 +5,7 @@ const CreatePost = () => {
   return (
     <>
     <div>CreatePost</div>
-    {/* <NavBar /> */}
+    <NavBar />
     </>
   )
 }
