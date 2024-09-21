@@ -8,21 +8,21 @@ This application allows users to create, read, update, and delete blog posts. It
 
 ## Features
 
-- User Authentication: Secure login and registration using JWT.
-- CRUD Operations: Create, read, update, and delete blog posts.
-- Rich Text Editor: Enhanced post creation with a rich text editor.
-- Responsive Design: Optimized for both desktop and mobile devices.
-- Comment System: Users can comment on posts.
-- Search Functionality: Easily search for posts by title or content.
-- Profile Management: Users can manage their profiles and view their posts.
+- **User Authentication:** Secure login and registration using JWT.
+- **CRUD Operations:** Create, read, update, and delete blog posts.
+- **Rich Text Editor:** Enhanced post creation with a rich text editor.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Comment System:** Users can comment on posts.
+- **Search Functionality:** Easily search for posts by title or content.
+- **Profile Management:** Users can manage their profiles and view their posts.
 
 ## Technologies used
 
-- Frontend: React, Redux, Tailwind CSS
-- Backend: Node.js, Express.js
-- Database: MongoDB
-- Authentication: JSON Web Tokens (JWT)
-- Deployment: Docker, Heroku
+- **Frontend:** React, Redux, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JSON Web Tokens (JWT)
+- **Deployment:** Docker, Heroku
 
 ## Installation
 

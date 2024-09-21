@@ -1,18 +1,20 @@
 import React, { useContext, useState } from 'react';
-import { Link, useLocation, useNavigation } from 'react-router-dom';
+import { Link, useLocation, useNavigation, useNavigate } from 'react-router-dom';
+import { UserContext} from "../context/UserContext";
 import { BsSearch } from "react-icons/bs";
 import { BsPen } from "react-icons/bs";
 import { FiLogIn } from "react-icons/fi";
 import { FaBars } from "react-icons/fa";
-import Menu from "./Menu";
 import { FaRegCaretSquareRight } from "react-icons/fa";
+import Menu from "./Menu";
 
 function NavBar() {
 
   const [prompt, setPrompt] = useState(""); // Search string
   const [menu, setMenu] = useState(false); // Toggle Menu button
 
-  const navigate = useNavigation();
+  // const navigate = useNavigation();
+  const navigate = useNavigate();
   const path = useLocation().pathname;
   // It will take us to the location, pathname, because we want to navigate to some other page
 
@@ -63,7 +65,7 @@ function NavBar() {
             user ?
               <h3> <Link to="/write"><BsPen /> Write</Link> </h3>
               :
-              <h3> <Link to="/Login"><FiLogIn /> Login</Link></h3>
+              <h3> <Link to="/login"><FiLogIn /> Login</Link></h3>
           }
 
           {/* If user is true, we will show the MENU when the <div> element is clicked.
