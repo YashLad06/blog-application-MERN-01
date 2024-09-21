@@ -15,12 +15,14 @@ function Menu() {
 
   const handleLogOut = async () => {
     try {
-      const res = await axios.get("/api/auth/logout", {withCredentials: true})
+      const res = await axios.get("/api/auth/logout", { withCredentials: true })
       setUser(null);
       navigate("/login");
     }
-    catch {
-
+    catch (err) {
+      console.log("Log out API Error", err);
+      // Show a pop up window (Material UI Dialog) with message:
+      // "Error logging out. Please try again."
     }
   }
 
@@ -62,7 +64,7 @@ function Menu() {
       {
         user && <h3 className='text-white text-sm hover:text-gray-500 cursor-pointer bg-slate-900'
           onClick={handleLogOut()}>
-           Log out
+          Log out
         </h3>
       }
 
